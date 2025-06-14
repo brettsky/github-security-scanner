@@ -1,0 +1,13 @@
+# Configuration files that might contain sensitive data
+config.json
+*.env
+
+# Output files
+findings.json
+findings.csv
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store 
