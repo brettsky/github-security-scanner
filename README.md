@@ -13,31 +13,23 @@ A tool to scan GitHub repositories for potential security issues and exposed sec
 ## Setup
 
 1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/github-security-scanner.git
-cd github-security-scanner
-```
+
+
 
 2. Create your configuration file:
-```bash
-cp config.template.json config.json
-```
+
 
 3. Get a GitHub Personal Access Token:
-   - Go to GitHub Settings → Developer Settings → Personal Access Tokens
-   - Click "Generate new token (classic)"
-   - Give it a name (e.g., "GitHubScanner")
-   - Select scopes: `repo` and `read:packages`
-   - Copy the token
+
 
 4. Edit `config.json` and replace `YOUR_GITHUB_TOKEN_HERE` with your token
 
 ## Usage
 
 Run the scanner:
-```bash
+
 go run main.go -config config.json -output json
-```
+
 
 Options:
 - `-config`: Path to configuration file (default: config.json)
